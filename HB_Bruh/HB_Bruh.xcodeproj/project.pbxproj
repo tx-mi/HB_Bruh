@@ -12,6 +12,12 @@
 		C578C8A92880B31100DA873F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8A82880B31100DA873F /* R.generated.swift */; };
 		C578C8B72880BB0A00DA873F /* Archeologicaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */; };
 		C578C8BB2880BC5000DA873F /* AA Haymaker Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C578C8BA2880BC5000DA873F /* AA Haymaker Regular.ttf */; };
+		C578C8BF2880BEEC00DA873F /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8BE2880BEEC00DA873F /* UIColor+Ext.swift */; };
+		C578C8C12880BF1200DA873F /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8C02880BF1200DA873F /* String+Ext.swift */; };
+		C578C8C32880BF4E00DA873F /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8C22880BF4E00DA873F /* UILabel+Ext.swift */; };
+		C578C8C52880BF6D00DA873F /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8C42880BF6D00DA873F /* UINavigationController+Ext.swift */; };
+		C578C8C72880BFA600DA873F /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8C62880BFA600DA873F /* Int+Ext.swift */; };
+		C578C8C92880BFB100DA873F /* Errors+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8C82880BFB100DA873F /* Errors+Ext.swift */; };
 		C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */; };
 		C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */; };
 		C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F94288098850009D9E2 /* AppDelegate.swift */; };
@@ -25,6 +31,12 @@
 		C578C8A82880B31100DA873F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Archeologicaps.ttf; sourceTree = "<group>"; };
 		C578C8BA2880BC5000DA873F /* AA Haymaker Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AA Haymaker Regular.ttf"; sourceTree = "<group>"; };
+		C578C8BE2880BEEC00DA873F /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		C578C8C02880BF1200DA873F /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		C578C8C22880BF4E00DA873F /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		C578C8C42880BF6D00DA873F /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		C578C8C62880BFA600DA873F /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		C578C8C82880BFB100DA873F /* Errors+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Errors+Ext.swift"; sourceTree = "<group>"; };
 		C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataClass.swift"; path = "HB_Bruh/Quest+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataProperties.swift"; path = "HB_Bruh/Quest+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5847F91288098850009D9E2 /* HB_Bruh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HB_Bruh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +94,26 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C578C8BC2880BE8800DA873F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C578C8BD2880BE9000DA873F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C578C8BE2880BEEC00DA873F /* UIColor+Ext.swift */,
+				C578C8C02880BF1200DA873F /* String+Ext.swift */,
+				C578C8C22880BF4E00DA873F /* UILabel+Ext.swift */,
+				C578C8C42880BF6D00DA873F /* UINavigationController+Ext.swift */,
+				C578C8C62880BFA600DA873F /* Int+Ext.swift */,
+				C578C8C82880BFB100DA873F /* Errors+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C5847F88288098850009D9E2 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				C578C8A72880B2E000DA873F /* Resources */,
+				C578C8BD2880BE9000DA873F /* Extensions */,
+				C578C8BC2880BE8800DA873F /* Modules */,
 				C5847F94288098850009D9E2 /* AppDelegate.swift */,
 				C5847F96288098850009D9E2 /* SceneDelegate.swift */,
 				C5847FA0288098850009D9E2 /* Assets.xcassets */,
@@ -252,9 +286,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */,
+				C578C8C12880BF1200DA873F /* String+Ext.swift in Sources */,
+				C578C8C52880BF6D00DA873F /* UINavigationController+Ext.swift in Sources */,
 				C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */,
 				C578C8A92880B31100DA873F /* R.generated.swift in Sources */,
+				C578C8C72880BFA600DA873F /* Int+Ext.swift in Sources */,
+				C578C8BF2880BEEC00DA873F /* UIColor+Ext.swift in Sources */,
 				C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */,
+				C578C8C92880BFB100DA873F /* Errors+Ext.swift in Sources */,
+				C578C8C32880BF4E00DA873F /* UILabel+Ext.swift in Sources */,
 				C5847F97288098850009D9E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
