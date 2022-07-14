@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */; };
+		C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */; };
 		C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F94288098850009D9E2 /* AppDelegate.swift */; };
 		C5847F97288098850009D9E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F96288098850009D9E2 /* SceneDelegate.swift */; };
 		C5847F99288098850009D9E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F98288098850009D9E2 /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataClass.swift"; path = "HB_Bruh/Quest+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataProperties.swift"; path = "HB_Bruh/Quest+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5847F91288098850009D9E2 /* HB_Bruh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HB_Bruh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5847F94288098850009D9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5847F96288098850009D9E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		C5847F88288098850009D9E2 = {
 			isa = PBXGroup;
 			children = (
+				C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */,
+				C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */,
 				C5847F93288098850009D9E2 /* HB_Bruh */,
 				C5847F92288098850009D9E2 /* Products */,
 			);
@@ -133,9 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */,
 				C5847F99288098850009D9E2 /* ViewController.swift in Sources */,
 				C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */,
 				C5847F9F288098850009D9E2 /* HB_Bruh.xcdatamodeld in Sources */,
+				C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */,
 				C5847F97288098850009D9E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
