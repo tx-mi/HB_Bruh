@@ -85,6 +85,7 @@ struct R: Rswift.Validatable {
   }
 
   static func validate() throws {
+    try font.validate()
     try intern.validate()
   }
 
@@ -109,6 +110,53 @@ struct R: Rswift.Validatable {
       return UIKit.UIColor(named: R.color.accentColor.name)
     }
     #endif
+
+    fileprivate init() {}
+  }
+
+  /// This `R.file` struct is generated, and contains static references to 2 files.
+  struct file {
+    /// Resource file `AA Haymaker Regular.ttf`.
+    static let aaHaymakerRegularTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "AA Haymaker Regular", pathExtension: "ttf")
+    /// Resource file `Archeologicaps.ttf`.
+    static let archeologicapsTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Archeologicaps", pathExtension: "ttf")
+
+    /// `bundle.url(forResource: "AA Haymaker Regular", withExtension: "ttf")`
+    static func aaHaymakerRegularTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.aaHaymakerRegularTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Archeologicaps", withExtension: "ttf")`
+    static func archeologicapsTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.archeologicapsTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.font` struct is generated, and contains static references to 2 fonts.
+  struct font: Rswift.Validatable {
+    /// Font `AA-Haymaker`.
+    static let aaHaymaker = Rswift.FontResource(fontName: "AA-Haymaker")
+    /// Font `Archeologicaps`.
+    static let archeologicaps = Rswift.FontResource(fontName: "Archeologicaps")
+
+    /// `UIFont(name: "AA-Haymaker", size: ...)`
+    static func aaHaymaker(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: aaHaymaker, size: size)
+    }
+
+    /// `UIFont(name: "Archeologicaps", size: ...)`
+    static func archeologicaps(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: archeologicaps, size: size)
+    }
+
+    static func validate() throws {
+      if R.font.aaHaymaker(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AA-Haymaker' could not be loaded, is 'AA Haymaker Regular.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.archeologicaps(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'Archeologicaps' could not be loaded, is 'Archeologicaps.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+    }
 
     fileprivate init() {}
   }

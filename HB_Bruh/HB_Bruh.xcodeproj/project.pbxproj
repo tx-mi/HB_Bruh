@@ -10,6 +10,8 @@
 		8D4E589A677A547F5D5D6A8D /* Pods_HB_Bruh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */; };
 		C55C9B932880AE7000E22A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5847FA0288098850009D9E2 /* Assets.xcassets */; };
 		C578C8A92880B31100DA873F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8A82880B31100DA873F /* R.generated.swift */; };
+		C578C8B72880BB0A00DA873F /* Archeologicaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */; };
+		C578C8BB2880BC5000DA873F /* AA Haymaker Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C578C8BA2880BC5000DA873F /* AA Haymaker Regular.ttf */; };
 		C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */; };
 		C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */; };
 		C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F94288098850009D9E2 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 		2A86AFA98C2E66AD67826538 /* Pods-HB_Bruh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HB_Bruh.release.xcconfig"; path = "Target Support Files/Pods-HB_Bruh/Pods-HB_Bruh.release.xcconfig"; sourceTree = "<group>"; };
 		C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HB_Bruh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C578C8A82880B31100DA873F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Archeologicaps.ttf; sourceTree = "<group>"; };
+		C578C8BA2880BC5000DA873F /* AA Haymaker Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AA Haymaker Regular.ttf"; sourceTree = "<group>"; };
 		C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataClass.swift"; path = "HB_Bruh/Quest+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataProperties.swift"; path = "HB_Bruh/Quest+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5847F91288098850009D9E2 /* HB_Bruh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HB_Bruh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,9 +67,19 @@
 		C578C8A72880B2E000DA873F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C578C8B52880BABD00DA873F /* Fonts */,
 				C578C8A82880B31100DA873F /* R.generated.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C578C8B52880BABD00DA873F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C578C8BA2880BC5000DA873F /* AA Haymaker Regular.ttf */,
+				C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C5847F88288098850009D9E2 = {
@@ -162,6 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C578C8B72880BB0A00DA873F /* Archeologicaps.ttf in Resources */,
+				C578C8BB2880BC5000DA873F /* AA Haymaker Regular.ttf in Resources */,
 				C55C9B932880AE7000E22A17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
