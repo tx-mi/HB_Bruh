@@ -19,8 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        let vc = UIViewController()
-        window.rootViewController = vc
+        window.rootViewController = QuestsConfigurator.configure()
         window.makeKeyAndVisible()
         self.window = window
     }

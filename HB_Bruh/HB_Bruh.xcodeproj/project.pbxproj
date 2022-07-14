@@ -24,6 +24,7 @@
 		C578C8D62880C17700DA873F /* QuestsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8D52880C17700DA873F /* QuestsConfigurator.swift */; };
 		C578C8D82880C18200DA873F /* QuestsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8D72880C18200DA873F /* QuestsRouter.swift */; };
 		C578C8DB2880C1AA00DA873F /* QuestsScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8DA2880C1AA00DA873F /* QuestsScreens.swift */; };
+		C578C8DD2880C5D000DA873F /* QuestsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8DC2880C5D000DA873F /* QuestsCellModel.swift */; };
 		C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */; };
 		C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */; };
 		C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F94288098850009D9E2 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		C578C8D52880C17700DA873F /* QuestsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsConfigurator.swift; sourceTree = "<group>"; };
 		C578C8D72880C18200DA873F /* QuestsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsRouter.swift; sourceTree = "<group>"; };
 		C578C8DA2880C1AA00DA873F /* QuestsScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsScreens.swift; sourceTree = "<group>"; };
+		C578C8DC2880C5D000DA873F /* QuestsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsCellModel.swift; sourceTree = "<group>"; };
 		C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataClass.swift"; path = "HB_Bruh/Quest+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataProperties.swift"; path = "HB_Bruh/Quest+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5847F91288098850009D9E2 /* HB_Bruh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HB_Bruh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				C578C8DA2880C1AA00DA873F /* QuestsScreens.swift */,
+				C578C8DC2880C5D000DA873F /* QuestsCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				C578C8C72880BFA600DA873F /* Int+Ext.swift in Sources */,
 				C578C8D62880C17700DA873F /* QuestsConfigurator.swift in Sources */,
 				C578C8BF2880BEEC00DA873F /* UIColor+Ext.swift in Sources */,
+				C578C8DD2880C5D000DA873F /* QuestsCellModel.swift in Sources */,
 				C578C8D42880C16800DA873F /* QuestsPresenter.swift in Sources */,
 				C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */,
 				C578C8C92880BFB100DA873F /* Errors+Ext.swift in Sources */,
