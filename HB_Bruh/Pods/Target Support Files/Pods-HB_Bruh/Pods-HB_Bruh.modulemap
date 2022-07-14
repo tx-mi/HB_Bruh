@@ -1,0 +1,6 @@
+framework module Pods_HB_Bruh {
+  umbrella header "Pods-HB_Bruh-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D4E589A677A547F5D5D6A8D /* Pods_HB_Bruh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */; };
+		C55C9B932880AE7000E22A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5847FA0288098850009D9E2 /* Assets.xcassets */; };
+		C578C8A92880B31100DA873F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8A82880B31100DA873F /* R.generated.swift */; };
 		C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */; };
 		C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */; };
 		C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F94288098850009D9E2 /* AppDelegate.swift */; };
 		C5847F97288098850009D9E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F96288098850009D9E2 /* SceneDelegate.swift */; };
-		C5847F99288098850009D9E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5847F98288098850009D9E2 /* ViewController.swift */; };
-		C5847F9F288098850009D9E2 /* HB_Bruh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5847F9D288098850009D9E2 /* HB_Bruh.xcdatamodeld */; };
-		C5847FA1288098850009D9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5847FA0288098850009D9E2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E155DAB9251D8FEC8E4C3EF /* Pods-HB_Bruh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HB_Bruh.debug.xcconfig"; path = "Target Support Files/Pods-HB_Bruh/Pods-HB_Bruh.debug.xcconfig"; sourceTree = "<group>"; };
+		2A86AFA98C2E66AD67826538 /* Pods-HB_Bruh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HB_Bruh.release.xcconfig"; path = "Target Support Files/Pods-HB_Bruh/Pods-HB_Bruh.release.xcconfig"; sourceTree = "<group>"; };
+		C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HB_Bruh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C578C8A82880B31100DA873F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C584558A2880AC9200075C21 /* Quest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataClass.swift"; path = "HB_Bruh/Quest+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Quest+CoreDataProperties.swift"; path = "HB_Bruh/Quest+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5847F91288098850009D9E2 /* HB_Bruh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HB_Bruh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5847F94288098850009D9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5847F96288098850009D9E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5847F98288098850009D9E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5847F9E288098850009D9E2 /* HB_Bruh.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HB_Bruh.xcdatamodel; sourceTree = "<group>"; };
 		C5847FA0288098850009D9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5847FA5288098850009D9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,12 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4E589A677A547F5D5D6A8D /* Pods_HB_Bruh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41E54DB91205153708A38F17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E155DAB9251D8FEC8E4C3EF /* Pods-HB_Bruh.debug.xcconfig */,
+				2A86AFA98C2E66AD67826538 /* Pods-HB_Bruh.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		894523FF23B1ACE5A2F42203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C578C8A72880B2E000DA873F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C578C8A82880B31100DA873F /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C5847F88288098850009D9E2 = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +75,8 @@
 				C584558B2880AC9200075C21 /* Quest+CoreDataProperties.swift */,
 				C5847F93288098850009D9E2 /* HB_Bruh */,
 				C5847F92288098850009D9E2 /* Products */,
+				41E54DB91205153708A38F17 /* Pods */,
+				894523FF23B1ACE5A2F42203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +91,9 @@
 		C5847F93288098850009D9E2 /* HB_Bruh */ = {
 			isa = PBXGroup;
 			children = (
+				C578C8A72880B2E000DA873F /* Resources */,
 				C5847F94288098850009D9E2 /* AppDelegate.swift */,
 				C5847F96288098850009D9E2 /* SceneDelegate.swift */,
-				C5847F98288098850009D9E2 /* ViewController.swift */,
 				C5847FA0288098850009D9E2 /* Assets.xcassets */,
 				C5847FA5288098850009D9E2 /* Info.plist */,
 				C5847F9D288098850009D9E2 /* HB_Bruh.xcdatamodeld */,
@@ -77,9 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5847FA8288098850009D9E2 /* Build configuration list for PBXNativeTarget "HB_Bruh" */;
 			buildPhases = (
+				1904553B0781852FE9FDDBE8 /* [CP] Check Pods Manifest.lock */,
+				C578C8A62880B20500DA873F /* RSwift */,
 				C5847F8D288098850009D9E2 /* Sources */,
 				C5847F8E288098850009D9E2 /* Frameworks */,
 				C5847F8F288098850009D9E2 /* Resources */,
+				159A22C056D03E4962D8B3F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,11 +162,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5847FA1288098850009D9E2 /* Assets.xcassets in Resources */,
+				C55C9B932880AE7000E22A17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		159A22C056D03E4962D8B3F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HB_Bruh/Pods-HB_Bruh-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HB_Bruh/Pods-HB_Bruh-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HB_Bruh/Pods-HB_Bruh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1904553B0781852FE9FDDBE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HB_Bruh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C578C8A62880B20500DA873F /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5847F8D288098850009D9E2 /* Sources */ = {
@@ -140,9 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */,
-				C5847F99288098850009D9E2 /* ViewController.swift in Sources */,
 				C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */,
-				C5847F9F288098850009D9E2 /* HB_Bruh.xcdatamodeld in Sources */,
+				C578C8A92880B31100DA873F /* R.generated.swift in Sources */,
 				C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */,
 				C5847F97288098850009D9E2 /* SceneDelegate.swift in Sources */,
 			);
@@ -267,6 +362,7 @@
 		};
 		C5847FA9288098850009D9E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E155DAB9251D8FEC8E4C3EF /* Pods-HB_Bruh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +390,7 @@
 		};
 		C5847FAA288098850009D9E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A86AFA98C2E66AD67826538 /* Pods-HB_Bruh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
