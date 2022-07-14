@@ -161,6 +161,57 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.image` struct is generated, and contains static references to 5 images.
+  struct image {
+    /// Image `square-silent`.
+    static let squareSilent = Rswift.ImageResource(bundle: R.hostingBundle, name: "square-silent")
+    /// Image `square-talk`.
+    static let squareTalk = Rswift.ImageResource(bundle: R.hostingBundle, name: "square-talk")
+    /// Image `toilet-closed`.
+    static let toiletClosed = Rswift.ImageResource(bundle: R.hostingBundle, name: "toilet-closed")
+    /// Image `toilet-half-opened`.
+    static let toiletHalfOpened = Rswift.ImageResource(bundle: R.hostingBundle, name: "toilet-half-opened")
+    /// Image `toilet-opened`.
+    static let toiletOpened = Rswift.ImageResource(bundle: R.hostingBundle, name: "toilet-opened")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "square-silent", bundle: ..., traitCollection: ...)`
+    static func squareSilent(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.squareSilent, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "square-talk", bundle: ..., traitCollection: ...)`
+    static func squareTalk(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.squareTalk, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "toilet-closed", bundle: ..., traitCollection: ...)`
+    static func toiletClosed(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.toiletClosed, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "toilet-half-opened", bundle: ..., traitCollection: ...)`
+    static func toiletHalfOpened(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.toiletHalfOpened, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "toilet-opened", bundle: ..., traitCollection: ...)`
+    static func toiletOpened(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.toiletOpened, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.info` struct is generated, and contains static references to 1 properties.
   struct info {
     struct uiApplicationSceneManifest {
