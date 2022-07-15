@@ -18,6 +18,7 @@ final class QuestsPresenter: NSObject, QuestsViewOutput {
     
     private weak var view: QuestsViewInput?
     private let router: QuestsRouterProtocol
+    private var quests: [Quest] = [Quest]()
     
     // MARK: - Initializers
     
@@ -28,6 +29,7 @@ final class QuestsPresenter: NSObject, QuestsViewOutput {
         self.view = view
         self.router = router
         super.init()
+        quests = Quest().makeQuests()
     }
     
     // MARK: - Methods
@@ -51,7 +53,14 @@ extension QuestsPresenter: UICollectionViewDataSource {
             for: indexPath
         ) as? QuestsCell else { return UICollectionViewCell() }
         
-        cell.configure(with: .init(name: "Quest \(indexPath.row)"))
+        let quest = quests[indexPath.row]
+        let isHidden: Bool = {
+            guard indexPath.row != 0 else { return false }
+            let prevQuest = quests[indexPath.row - 1]
+            return prevQuest.isCompleted ? false : true
+        }()
+        
+        cell.configure(with: .init(quest, isHidden))
         return cell
     }
 }
@@ -66,10 +75,12 @@ extension QuestsPresenter: UICollectionViewDelegate {
     }
 }
 
+// MARK: - QuestsCell.Model
+
 private extension QuestsCell.Model {
-    init(name: String) {
-        self.name = name
-        style = .normal
-        self.isHidden = false
+    init(_ model: Quest, _ isHidden: Bool) {
+        self.name = model.name
+        style = model.isCompleted ? .success : .normal
+        self.isHidden = isHidden
     }
 }
