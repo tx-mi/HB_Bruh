@@ -31,7 +31,7 @@ final class QuestsRouter: QuestsRouterProtocol {
         var viewController: UIViewController
         switch screen {
         case .knownBySquare:
-            viewController = UIViewController()
+            viewController = KnownBySquareConfigurator.configure()
         case .bookCode:
             viewController = UIViewController()
         case .crossword:

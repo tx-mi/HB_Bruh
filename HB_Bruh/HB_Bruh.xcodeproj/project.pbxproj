@@ -11,6 +11,14 @@
 		C5438A822881A43500FE7E40 /* QuestsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5438A812881A43500FE7E40 /* QuestsStorage.swift */; };
 		C5438A832882067100FE7E40 /* HB_Bruh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5847F9D288098850009D9E2 /* HB_Bruh.xcdatamodeld */; };
 		C5506DD2288236CA00184B9E /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DD1288236CA00184B9E /* UserDefaultsStorage.swift */; };
+		C5506DE22882421700184B9E /* KnownBySquareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DE12882421700184B9E /* KnownBySquareVC.swift */; };
+		C5506DE42882425600184B9E /* KnownBySquareConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DE32882425600184B9E /* KnownBySquareConfigurator.swift */; };
+		C5506DE62882426300184B9E /* KnownBySquareRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DE52882426300184B9E /* KnownBySquareRouter.swift */; };
+		C5506DE82882426B00184B9E /* KnownBySquarePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DE72882426B00184B9E /* KnownBySquarePresenter.swift */; };
+		C5506DEE288246CA00184B9E /* QuestionAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DED288246CA00184B9E /* QuestionAlertVC.swift */; };
+		C5506DF02882477100184B9E /* InfoAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DEF2882477100184B9E /* InfoAlertVC.swift */; };
+		C5506DF22882486600184B9E /* InfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DF12882486600184B9E /* InfoStorage.swift */; };
+		C5506DF428824A1E00184B9E /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DF328824A1E00184B9E /* CoreDataStorage.swift */; };
 		C55C9B932880AE7000E22A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5847FA0288098850009D9E2 /* Assets.xcassets */; };
 		C578C8A92880B31100DA873F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8A82880B31100DA873F /* R.generated.swift */; };
 		C578C8B72880BB0A00DA873F /* Archeologicaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */; };
@@ -40,6 +48,14 @@
 		C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HB_Bruh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5438A812881A43500FE7E40 /* QuestsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsStorage.swift; sourceTree = "<group>"; };
 		C5506DD1288236CA00184B9E /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		C5506DE12882421700184B9E /* KnownBySquareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownBySquareVC.swift; sourceTree = "<group>"; };
+		C5506DE32882425600184B9E /* KnownBySquareConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownBySquareConfigurator.swift; sourceTree = "<group>"; };
+		C5506DE52882426300184B9E /* KnownBySquareRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownBySquareRouter.swift; sourceTree = "<group>"; };
+		C5506DE72882426B00184B9E /* KnownBySquarePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownBySquarePresenter.swift; sourceTree = "<group>"; };
+		C5506DED288246CA00184B9E /* QuestionAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAlertVC.swift; sourceTree = "<group>"; };
+		C5506DEF2882477100184B9E /* InfoAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAlertVC.swift; sourceTree = "<group>"; };
+		C5506DF12882486600184B9E /* InfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStorage.swift; sourceTree = "<group>"; };
+		C5506DF328824A1E00184B9E /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		C578C8A82880B31100DA873F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Archeologicaps.ttf; sourceTree = "<group>"; };
 		C578C8BA2880BC5000DA873F /* AA Haymaker Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AA Haymaker Regular.ttf"; sourceTree = "<group>"; };
@@ -95,9 +111,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C5506DDF288241EE00184B9E /* KnownBySquare */ = {
+			isa = PBXGroup;
+			children = (
+				C5506DE32882425600184B9E /* KnownBySquareConfigurator.swift */,
+				C5506DE52882426300184B9E /* KnownBySquareRouter.swift */,
+				C5506DE72882426B00184B9E /* KnownBySquarePresenter.swift */,
+				C5506DE12882421700184B9E /* KnownBySquareVC.swift */,
+			);
+			path = KnownBySquare;
+			sourceTree = "<group>";
+		};
+		C5506DEB2882466400184B9E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C5506DEC2882468C00184B9E /* Contorllers */,
+				C578C8A72880B2E000DA873F /* Resources */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C5506DEC2882468C00184B9E /* Contorllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5506DED288246CA00184B9E /* QuestionAlertVC.swift */,
+				C5506DEF2882477100184B9E /* InfoAlertVC.swift */,
+			);
+			path = Contorllers;
+			sourceTree = "<group>";
+		};
 		C578C8A72880B2E000DA873F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C578C8BD2880BE9000DA873F /* Extensions */,
 				C578C8D92880C19D00DA873F /* Models */,
 				C578C8B52880BABD00DA873F /* Fonts */,
 				C578C8A82880B31100DA873F /* R.generated.swift */,
@@ -117,6 +163,7 @@
 		C578C8BC2880BE8800DA873F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C5506DDF288241EE00184B9E /* KnownBySquare */,
 				C578C8CC2880C0AC00DA873F /* Quests */,
 			);
 			path = Modules;
@@ -170,6 +217,8 @@
 				C578C8DC2880C5D000DA873F /* QuestsCellModel.swift */,
 				C5438A812881A43500FE7E40 /* QuestsStorage.swift */,
 				C5506DD1288236CA00184B9E /* UserDefaultsStorage.swift */,
+				C5506DF12882486600184B9E /* InfoStorage.swift */,
+				C5506DF328824A1E00184B9E /* CoreDataStorage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,8 +246,7 @@
 		C5847F93288098850009D9E2 /* HB_Bruh */ = {
 			isa = PBXGroup;
 			children = (
-				C578C8A72880B2E000DA873F /* Resources */,
-				C578C8BD2880BE9000DA873F /* Extensions */,
+				C5506DEB2882466400184B9E /* Common */,
 				C578C8BC2880BE8800DA873F /* Modules */,
 				C5847F94288098850009D9E2 /* AppDelegate.swift */,
 				C5847F96288098850009D9E2 /* SceneDelegate.swift */,
@@ -351,18 +399,26 @@
 				C578C8C12880BF1200DA873F /* String+Ext.swift in Sources */,
 				C578C8DB2880C1AA00DA873F /* QuestsScreens.swift in Sources */,
 				C578C8C52880BF6D00DA873F /* UINavigationController+Ext.swift in Sources */,
+				C5506DF428824A1E00184B9E /* CoreDataStorage.swift in Sources */,
+				C5506DE62882426300184B9E /* KnownBySquareRouter.swift in Sources */,
 				C578C8D82880C18200DA873F /* QuestsRouter.swift in Sources */,
 				C5847F95288098850009D9E2 /* AppDelegate.swift in Sources */,
 				C578C8A92880B31100DA873F /* R.generated.swift in Sources */,
 				C5438A822881A43500FE7E40 /* QuestsStorage.swift in Sources */,
+				C5506DE22882421700184B9E /* KnownBySquareVC.swift in Sources */,
 				C578C8C72880BFA600DA873F /* Int+Ext.swift in Sources */,
+				C5506DEE288246CA00184B9E /* QuestionAlertVC.swift in Sources */,
 				C578C8D62880C17700DA873F /* QuestsConfigurator.swift in Sources */,
+				C5506DF02882477100184B9E /* InfoAlertVC.swift in Sources */,
 				C578C8BF2880BEEC00DA873F /* UIColor+Ext.swift in Sources */,
 				C578C8DD2880C5D000DA873F /* QuestsCellModel.swift in Sources */,
 				C578C8D42880C16800DA873F /* QuestsPresenter.swift in Sources */,
 				C584558C2880AC9200075C21 /* Quest+CoreDataClass.swift in Sources */,
+				C5506DE82882426B00184B9E /* KnownBySquarePresenter.swift in Sources */,
+				C5506DF22882486600184B9E /* InfoStorage.swift in Sources */,
 				C578C8C92880BFB100DA873F /* Errors+Ext.swift in Sources */,
 				C578C8C32880BF4E00DA873F /* UILabel+Ext.swift in Sources */,
+				C5506DE42882425600184B9E /* KnownBySquareConfigurator.swift in Sources */,
 				C578C8D22880C14C00DA873F /* QuestsCell.swift in Sources */,
 				C5847F97288098850009D9E2 /* SceneDelegate.swift in Sources */,
 				C578C8D02880C11A00DA873F /* QuestsVC.swift in Sources */,
