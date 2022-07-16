@@ -14,7 +14,7 @@ protocol KnownBySquareViewInput: AnyObject {
 }
 
 final class KnownBySquareVC: UIViewController, KnownBySquareViewInput {
-    
+    typealias KnownInfo = InfoStorage.KnownBySquare
     // MARK: - Properties
 
     private enum Constants {
@@ -83,7 +83,7 @@ final class KnownBySquareVC: UIViewController, KnownBySquareViewInput {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.addCoreMotion()
-//        showSimpleAlert()
+        showSimpleAlert()
     }
     
 }
@@ -103,11 +103,11 @@ private extension KnownBySquareVC {
     func setupNavBar() {
         title = Quest().fetchQuests()[0].name
         navigationController?.setTitle(with: .sandColor)
-//        navigationItem.rightBarButtonItem = .init(
-//            barButtonSystemItem: .bookmarks,
-//            target: self,
-//            action: #selector(showSimpleAlert)
-//        )
+        navigationItem.rightBarButtonItem = .init(
+            barButtonSystemItem: .bookmarks,
+            target: self,
+            action: #selector(showSimpleAlert)
+        )
     }
     
     func makeConstraints() {
@@ -187,7 +187,7 @@ extension KnownBySquareVC {
      
     @objc func updateSquareImage() {
         squareImageView.startAnimating()
-//        showQuestionAlert()
+        showQuestionAlert()
     }
    
     func animateSquare() {
@@ -207,3 +207,46 @@ extension KnownBySquareVC {
         }
     }
 }
+
+// MARK: - UIAlert
+
+private extension KnownBySquareVC {
+    @objc func showSimpleAlert() {
+        let alertVC = InfoAlertVC(
+            title: KnownInfo.SimpleAlert.title,
+            message: KnownInfo.SimpleAlert.message
+        )
+        present(alertVC, animated: true)
+    }
+    
+    func showQuestionAlert() {
+        let alertVC = QuestionAlertVC(
+            title: KnownInfo.QuestionAlert.title,
+            message: KnownInfo.QuestionAlert.message,
+            correctAnswer: KnownInfo.QuestionAlert.correctAnswer,
+            checkAction: { [weak self] result in
+                guard let self = self else { return }
+                switch result {
+                case .success():
+                    Quest().saveQuest(at: .knownBySquare)
+                    self.confettiView.isHidden = false
+                    self.confettiView.startConfetti()
+                    self.squareImageView.stopAnimating()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        guard self.confettiView.isActive() else { return }
+                        self.confettiView.stopConfetti()
+                        self.confettiView.isHidden = true
+                    }
+                case .failure(_):
+                    break
+                }
+            },
+            closeAction: { [weak self] in
+                guard let self = self, self.squareImageView.isAnimating else { return }
+                self.squareImageView.stopAnimating()
+            }
+        )
+        present(alertVC, animated: true)
+    }
+}
+

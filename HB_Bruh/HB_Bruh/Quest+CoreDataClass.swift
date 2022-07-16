@@ -33,6 +33,18 @@ public class Quest: NSManagedObject {
         return result
     }
     
+    func saveQuest(at screen: Screens) {
+        guard
+            let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+        else { return }
+
+        let fetchResult = fetch(context)
+        let index = Screens.allCases.firstIndex(of: screen) ?? 0 as Int
+        let managedObject = fetchResult[index]
+        managedObject.setValue(true, forKey: CoreDataKeys.isCompleted)
+        save(context)
+    }
+    
 }
 
 extension Quest {

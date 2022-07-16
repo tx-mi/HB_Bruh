@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum CoreDataKeys {
+    static let isCompleted = "isCompleted"
+}
