@@ -47,6 +47,7 @@ final class QuestsPresenter: NSObject, QuestsViewOutput {
             return
         }
         userDefaults.isSecondOpen = true
+        view?.isFirstOpen = true
         quests = Quest().makeQuests()
     }
     

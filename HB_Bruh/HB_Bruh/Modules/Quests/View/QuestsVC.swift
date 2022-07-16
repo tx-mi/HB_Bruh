@@ -8,7 +8,7 @@
 import UIKit
 
 protocol QuestsViewInput: AnyObject {
-    
+    var isFirstOpen: Bool { get set }
 }
 
 final class QuestsVC: UICollectionViewController, QuestsViewInput {
@@ -29,6 +29,7 @@ final class QuestsVC: UICollectionViewController, QuestsViewInput {
     // MARK: - Properties
     
     var presenter: QuestsViewOutput?
+    private var showOnboarding: Bool = false
 
     // MARK: - LifeCycle
     
@@ -74,3 +75,14 @@ private extension QuestsVC {
     
 }
 
+
+// MARK: - QuestsViewInput
+
+extension QuestsVC {
+    
+    var isFirstOpen: Bool {
+        get { showOnboarding }
+        set { showOnboarding = newValue }
+    }
+    
+}
