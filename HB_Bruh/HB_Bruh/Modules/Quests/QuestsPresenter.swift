@@ -8,7 +8,7 @@
 import UIKit
 
 protocol QuestsViewOutput: AnyObject {
-    init(view: QuestsViewInput, router: QuestsRouterProtocol)
+    init(view: QuestsViewInput, router: QuestsRouterProtocol, userDefaults: UserDefaultsStorage)
     func moveToQuest(at: Screens) // call same func in router
 }
 
@@ -19,23 +19,35 @@ final class QuestsPresenter: NSObject, QuestsViewOutput {
     private weak var view: QuestsViewInput?
     private let router: QuestsRouterProtocol
     private var quests: [Quest] = [Quest]()
+    private var userDefaults: UserDefaultsStorage
     
     // MARK: - Initializers
     
     init(
         view: QuestsViewInput,
-        router: QuestsRouterProtocol
+        router: QuestsRouterProtocol,
+        userDefaults: UserDefaultsStorage
     ) {
         self.view = view
         self.router = router
+        self.userDefaults = userDefaults
         super.init()
-        quests = Quest().makeQuests()
+        configureQuests()
     }
     
     // MARK: - Methods
     
     func moveToQuest(at screen: Screens) {
         router.moveToQuest(at: screen)
+    }
+    
+    func configureQuests() {
+        guard !userDefaults.isSecondOpen else {
+            quests = Quest().fetchQuests()
+            return
+        }
+        userDefaults.isSecondOpen = true
+        quests = Quest().makeQuests()
     }
     
 }

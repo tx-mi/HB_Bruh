@@ -10,6 +10,7 @@
 		8D4E589A677A547F5D5D6A8D /* Pods_HB_Bruh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */; };
 		C5438A822881A43500FE7E40 /* QuestsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5438A812881A43500FE7E40 /* QuestsStorage.swift */; };
 		C5438A832882067100FE7E40 /* HB_Bruh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5847F9D288098850009D9E2 /* HB_Bruh.xcdatamodeld */; };
+		C5506DD2288236CA00184B9E /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5506DD1288236CA00184B9E /* UserDefaultsStorage.swift */; };
 		C55C9B932880AE7000E22A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5847FA0288098850009D9E2 /* Assets.xcassets */; };
 		C578C8A92880B31100DA873F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C578C8A82880B31100DA873F /* R.generated.swift */; };
 		C578C8B72880BB0A00DA873F /* Archeologicaps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */; };
@@ -38,6 +39,7 @@
 		2A86AFA98C2E66AD67826538 /* Pods-HB_Bruh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HB_Bruh.release.xcconfig"; path = "Target Support Files/Pods-HB_Bruh/Pods-HB_Bruh.release.xcconfig"; sourceTree = "<group>"; };
 		C44142DCF268A0B470C12E9B /* Pods_HB_Bruh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HB_Bruh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5438A812881A43500FE7E40 /* QuestsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsStorage.swift; sourceTree = "<group>"; };
+		C5506DD1288236CA00184B9E /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		C578C8A82880B31100DA873F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C578C8B62880BB0A00DA873F /* Archeologicaps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Archeologicaps.ttf; sourceTree = "<group>"; };
 		C578C8BA2880BC5000DA873F /* AA Haymaker Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AA Haymaker Regular.ttf"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		C578C8A72880B2E000DA873F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C578C8D92880C19D00DA873F /* Models */,
 				C578C8B52880BABD00DA873F /* Fonts */,
 				C578C8A82880B31100DA873F /* R.generated.swift */,
 			);
@@ -135,7 +138,6 @@
 		C578C8CC2880C0AC00DA873F /* Quests */ = {
 			isa = PBXGroup;
 			children = (
-				C578C8D92880C19D00DA873F /* Model */,
 				C578C8D52880C17700DA873F /* QuestsConfigurator.swift */,
 				C578C8D72880C18200DA873F /* QuestsRouter.swift */,
 				C578C8D32880C16800DA873F /* QuestsPresenter.swift */,
@@ -161,14 +163,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		C578C8D92880C19D00DA873F /* Model */ = {
+		C578C8D92880C19D00DA873F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				C578C8DA2880C1AA00DA873F /* QuestsScreens.swift */,
 				C578C8DC2880C5D000DA873F /* QuestsCellModel.swift */,
 				C5438A812881A43500FE7E40 /* QuestsStorage.swift */,
+				C5506DD1288236CA00184B9E /* UserDefaultsStorage.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C5847F88288098850009D9E2 = {
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5438A832882067100FE7E40 /* HB_Bruh.xcdatamodeld in Sources */,
+				C5506DD2288236CA00184B9E /* UserDefaultsStorage.swift in Sources */,
 				C584558D2880AC9200075C21 /* Quest+CoreDataProperties.swift in Sources */,
 				C578C8C12880BF1200DA873F /* String+Ext.swift in Sources */,
 				C578C8DB2880C1AA00DA873F /* QuestsScreens.swift in Sources */,

@@ -13,7 +13,7 @@ final class QuestsConfigurator {
         let view = QuestsVC(collectionViewLayout: UICollectionViewFlowLayout())
         let navigationController = UINavigationController(rootViewController: view)
         let router = QuestsRouter(view: view)
-        let presenter = QuestsPresenter(view: view, router: router)
+        let presenter = QuestsPresenter(view: view, router: router, userDefaults: UserDefaults.standard)
         view.presenter = presenter
         
         return navigationController
