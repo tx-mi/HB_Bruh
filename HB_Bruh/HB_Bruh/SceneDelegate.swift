@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window.rootViewController = QuestsConfigurator.configure()
         window.makeKeyAndVisible()
+        window.overrideUserInterfaceStyle = .dark
         self.window = window
     }
     
